@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Silkscreen', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    max-width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    transition-duration: .06s;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
