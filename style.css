@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: 'Silkscreen', monospace;
+    font-family: 'Lexend', sans-serif;
 }
 
 body {
@@ -24,7 +24,19 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: rgb(212, 51, 51)
+}
+
 nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.iconBox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,10 +46,17 @@ nav {
 .icon {
     width: 40px;
     height: 40px;
-    transition-duration: .06s;
+    transition-duration: .1s;
+    margin: 10px;
 }
 
 .icon:hover {
     cursor: pointer;
+    filter: drop-shadow(0px 0px 5px rgba(255, 0, 0, 0.464));
     transform: scale(1.15);
+}
+
+img {
+    width: 325px;
+    margin: 20px;
 }
