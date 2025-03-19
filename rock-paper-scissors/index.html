@@ -22,28 +22,32 @@
         </div>
     </div>
 
-    <div id="handSelect">
-        <p>SELECT YOUR HAND</p>
-        <div class="hands">
-            <img src="./resources/rock.png" alt="rock" class="hand" id="rock">
-            <img src="./resources/paper.png" alt="paper" class="hand" id="paper">
-            <img src="./resources/scissors.png" alt="scissors" class="hand" id="scissors">
-        </div>
-    </div>
+    <div id="game">
 
-    <div id="handReveal">
-        <div class="result">
-            <div class="resultCard" id="userResultCard">
-                <p>PLAYER</p>
-                <img src="./resources/rock.png" class="resultHand" id="userResult">
-            </div>
-            <div class="resultCard" id="computerResultCard">
-                <p>COMPUTER</p>
-                <img src="./resources/rock.png" class="resultHand" id="computerResult">
+        <div id="handSelect">
+            <p>SELECT YOUR HAND</p>
+            <div class="hands">
+                <img src="./resources/rock.png" alt="rock" class="hand" id="rock">
+                <img src="./resources/paper.png" alt="paper" class="hand" id="paper">
+                <img src="./resources/scissors.png" alt="scissors" class="hand" id="scissors">
             </div>
         </div>
-        <p id="resultText">PLAYER WINS!</p>
-        <div id="resetButton">NEXT ROUND</div>
+
+        <div id="handReveal">
+            <div class="result">
+                <div class="resultCard" id="userResultCard">
+                    <p>PLAYER</p>
+                    <img src="./resources/rock.png" class="resultHand" id="userResult">
+                </div>
+                <div class="resultCard" id="computerResultCard">
+                    <p>COMPUTER</p>
+                    <img src="./resources/rock.png" class="resultHand" id="computerResult">
+                </div>
+            </div>
+            <p id="resultText">PLAYER WINS!</p>
+            <div id="resetButton">NEXT ROUND</div>
+        </div>
+
     </div>
 
     <script src="./rock-paper-scissors.js"></script>
