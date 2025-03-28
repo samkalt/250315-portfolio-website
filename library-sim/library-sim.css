@@ -1,0 +1,143 @@
+/* Everything */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgb(17, 0, 143), rgb(10, 0, 72));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 150px;
+}
+
+/* Library Container */
+
+#library-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgb(45, 30, 162);
+    border-radius: 10px;
+}
+
+/* Filter Section */
+
+#filter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(10, 0, 72);
+    border-radius: 10px;
+}
+
+#filter-section .filter-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-group .filter {
+    margin: 10px;
+    padding: 10px;
+}
+
+#media-type {
+    color: black;
+}
+
+#media-type option {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* Library Section */
+
+#library-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 20px;
+}
+
+.library-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 300px;
+}
+
+.library-item .data-type {
+    height: 60px;
+    width: 60px;
+}
+
+.library-item .rating {
+    height: 30px;
+}
+
+.library-item span {
+    color: black;
+    font-weight: bold;
+}
+
+.library-item .title {
+    font-size: 1.4em;
+}
+
+.library-item .author {
+    font-weight: normal;
+}
+
+.library-item .artist {
+    font-weight: normal;
+}
+
+.library-item .director {
+    font-weight: normal;
+}
+
+.library-item .checked-out {
+    height: 30px;
+}
+
+.library-item button {
+    background-color: rgb(16, 159, 80);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}

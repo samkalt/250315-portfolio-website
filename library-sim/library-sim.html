@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smoothie's Library</title>
+    <link rel="stylesheet" type="text/css" href="./library-sim.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="./resources/logo.png" alt="logo">
+    </header>
+
+    <div id="library-container">
+
+        <div id="filter-section">
+            <h3>Filter Library</h3>
+            <br>
+            <div class="filter-group">
+                <label class="filter">
+                    Media Type :
+                    <select id="media-type">
+                        <option value="">All</option>
+                        <option value="Book">Book</option>
+                        <option value="Movie">Movie</option>
+                        <option value="CD">CD</option>
+                    </select>
+                </label>
+                <fieldset class="filter">
+                    <legend>Checked Out :</legend>
+                    <label>
+                        <input type="radio" name="is-checked-out" value="" checked>
+                        All
+                    </label>
+                    <label>
+                        <input type="radio" name="is-checked-out" value="true">
+                        Checked Out
+                    </label>
+                    <label>
+                        <input type="radio" name="is-checked-out" value="false">
+                        Available
+                    </label>
+                </fieldset class="filter">
+                <label>
+                    Minimum Rating :
+                    <input type="range" id="min-rating" min="0" max="5" step="1" value="0"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output>0</output>
+                </label>
+            </div>
+            <br>
+            <button id="apply-filters">Apply Filters</button>
+        </div>
+
+        <div id="library-section">
+            <div class="library-item" data-type="Book" data-checked-out="false" data-rating="4.5">
+                <span class="title">The Great Gatsby</span>
+                <img class="data-type" src="./resources/book.png" alt="Book">
+                <br>
+                <span>Author :</span>
+                <span class="author">F. Scott Fitzgerald</span>
+                <br>
+                <span>Rating :</span>
+                <img class="rating" src="./resources/4.png">
+                <br>
+                <span>Available :</span>
+                <img class="checked-out" src="./resources/yes.png">
+                <br>
+                <button class="checkout-button">Check Out</button>
+            </div>
+            <div class="library-item" data-type="Movie" data-checked-out="true" data-rating="3">
+                <span class="title">Inception</span>
+                <img class="data-type" src="./resources/movie.png" alt="Movie">
+                <br>
+                <span>Director :</span>
+                <span class="director">Christopher Nolan</span>
+                <br>
+                <span>Rating :</span>
+                <img class="rating" src="./resources/3.png">
+                <br>
+                <span>Available :</span>
+                <img class="checked-out" src="./resources/no.png">
+                <br>
+                <button class="checkout-button">Check Out</button>
+            </div>
+            <div class="library-item" data-type="CD" data-checked-out="false" data-rating="5">
+                <span class="title">Thriller</span>
+                <img class="data-type" src="./resources/music.png" alt="CD">
+                <br>
+                <span>Artist :</span>
+                <span class="artist">Michael Jackson</span>
+                <br>
+                <span>Rating :</span>
+                <img class="rating" src="./resources/5.png">
+                <br>
+                <span>Available :</span>
+                <img class="checked-out" src="./resources/yes.png">
+                <br>
+                <button class="checkout-button">Check Out</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
