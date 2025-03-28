@@ -1,20 +1,4 @@
 //Scoreboard
-//Player selects a hand
-//Computer chooses random hand
-//Compare hands
-//If user wins
-//  Add to score
-//  Update scoreboard number
-//  Display Player Wins text
-//If Computer wins
-//  Add to score
-//  Update scoreboard number
-//  Display Computer Wins text
-//If tie
-//  Display Tie text
-//Toggle results box
-
-//Scoreboard
 let userScoreCount = 0
 let computerScoreCount = 0
 
@@ -121,10 +105,10 @@ function resetGame() {
 }
 
 //Event Listeners
-    //Play Game
-    rock.addEventListener('click', () => playGame('rock'))
-    paper.addEventListener('click', () => playGame('paper'))
-    scissors.addEventListener('click', () => playGame('scissors'))
+//Play Game
+rock.addEventListener('click', () => playGame('rock'))
+paper.addEventListener('click', () => playGame('paper'))
+scissors.addEventListener('click', () => playGame('scissors'))
 
-    //Reset Game
-    resetButton.addEventListener('click', () => resetGame())
+//Reset Game
+resetButton.addEventListener('click', () => resetGame())
