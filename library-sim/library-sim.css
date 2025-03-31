@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgb(17, 0, 143), rgb(10, 0, 72));
+    background-image: linear-gradient(to bottom, rgb(143, 12, 0), rgb(72, 0, 0));
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ header img {
     align-items: center;
     justify-content: center;
     margin: 20px;
-    background-color: rgb(45, 30, 162);
+    background-color: rgb(162, 30, 30);
     border-radius: 10px;
 }
 
@@ -50,7 +50,7 @@ header img {
     justify-content: center;
     margin: 20px;
     padding: 20px;
-    background-color: rgb(10, 0, 72);
+    background-color: rgb(72, 0, 0);
     border-radius: 10px;
 }
 
@@ -121,11 +121,7 @@ header img {
     font-weight: normal;
 }
 
-.library-item .artist {
-    font-weight: normal;
-}
-
-.library-item .director {
+.library-item .amount {
     font-weight: normal;
 }
 
