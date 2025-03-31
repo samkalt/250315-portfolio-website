@@ -84,17 +84,17 @@ function addCD(title, artist, songs) {
 }
 
 // Update Library Functions
-function initializeLibrary() {
+function updateLibrary(newLibrary) {
   
   librarySection.innerHTML = ''; // Clear the library section before updating it
   
-  for (let i = 0; i < library.length; i++) {
-    if (library[i] instanceof Book) {
-      addMediaToLibraryDisplay(library[i], 'Book');
-    } else if (library[i] instanceof Movie) {
-      addMediaToLibraryDisplay(library[i], 'Movie');
-    } else if (library[i] instanceof CD) {
-      addMediaToLibraryDisplay(library[i], 'CD');
+  for (let i = 0; i < newLibrary.length; i++) {
+    if (newLibrary[i] instanceof Book) {
+      addMediaToLibraryDisplay(newLibrary[i], 'Book');
+    } else if (newLibrary[i] instanceof Movie) {
+      addMediaToLibraryDisplay(newLibrary[i], 'Movie');
+    } else if (newLibrary[i] instanceof CD) {
+      addMediaToLibraryDisplay(newLibrary[i], 'CD');
     }
   }
 }
@@ -103,8 +103,7 @@ function addMediaToLibraryDisplay(mediaItem, mediaType) {
   // Create a new div element for each media item
   const mediaDiv = document.createElement('div');
   mediaDiv.className = 'library-item';
-  
-  // Book
+
   if (mediaType === 'Book') {
     mediaDiv.innerHTML = `
     <span class="title">${mediaItem.title}</span>
@@ -120,7 +119,7 @@ function addMediaToLibraryDisplay(mediaItem, mediaType) {
     <img class="rating" src="./resources/${mediaItem.ratings}.png">
     <br>
     <span>Available :</span>
-    <img class="checked-out" src="./resources/no.png">
+    <img class="checked-out" src="./resources/yes.png">
     <br>
     <button class="checkout-button">Check Out</button>;`
   } else if (mediaType === 'Movie') {
@@ -138,7 +137,7 @@ function addMediaToLibraryDisplay(mediaItem, mediaType) {
     <img class="rating" src="./resources/${mediaItem.ratings}.png">
     <br>
     <span>Available :</span>
-    <img class="checked-out" src="./resources/no.png">
+    <img class="checked-out" src="./resources/yes.png">
     <br>
     <button class="checkout-button">Check Out</button>;`
   } else if (mediaType === 'CD') {
@@ -156,7 +155,7 @@ function addMediaToLibraryDisplay(mediaItem, mediaType) {
     <img class="rating" src="./resources/${mediaItem.ratings}.png">
     <br>
     <span>Available :</span>
-    <img class="checked-out" src="./resources/no.png">
+    <img class="checked-out" src="./resources/yes.png">
     <br>
     <button class="checkout-button">Check Out</button>;`
   } 
@@ -168,6 +167,6 @@ function addMediaToLibraryDisplay(mediaItem, mediaType) {
 
 // Filter media
 
-initializeLibrary(); // Initialize the library display
+updateLibrary(library); // Initialize the library display
 
 });
