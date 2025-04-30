@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SkyWest Trip Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="header-container">
+        <h1>SkyWest Trip Generator</h1>
+        <p>Click the button below to generate a trip!</p>
+        <button id="generate-button">Generate Trip</button>
+    </div>
+
+    <div id="trip-container">
+
+        <div class="card" id="aircraft-card">
+            <img id="aircraft-image" src="./resources/aircraft.png" alt="Aircraft Image">
+            <h2>Aircraft Type</h2>
+            <p id="HTMLaircraft">-</p>
+        </div>
+
+        <div class="card" id="position-card">
+            <img id="position-image" src="./resources/position.png" alt="Position Image">
+            <h2>Position</h2>
+            <p id="HTMLposition">-</p>
+        </div>
+
+        <div class="card" id="legs-card">
+            <img id="legs-image" src="./resources/legs.png" alt="Legs Image">
+            <h2>Number of Legs</h2>
+            <p id="HTMLlegs">-</p>
+        </div>
+
+        <div class="card" id="route-card">
+            <img id="route-image" src="./resources/route.png" alt="Route Image">
+            <h2>Route</h2>
+            <p id="HTMLroute">-</p>
+        </div>
+
+    </div>
+</body>
+
+<script src="./trip-generator.js"></script>
+
+</html>
